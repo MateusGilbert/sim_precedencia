@@ -29,7 +29,7 @@ def click():
 				audio = sim_app(audio)
 			else:
 				audio = sim_app(audio,approach=False)
-	play_audio(audio, 44100, reverse=True)
+	play_audio(audio, 44100, reverse=False)
 
 def enable_freq():
 	if bool_wav.get():
