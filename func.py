@@ -48,11 +48,11 @@ def gen_audio(freq, intensity, delay, framerate=44100, T=2, fromfile=None,ret_im
 def sim_mov(sound, left2right=True):
 	wrapping = linspace(0,1,len(sound[0]),endpoint=False)
 	if left2right:
-		data_left = multiply(wrapping,sound[0])
-		data_right = multiply(wrapping[::-1],sound[1])
-	else:
 		data_left = multiply(wrapping[::-1],sound[0])
 		data_right = multiply(wrapping,sound[1])
+	else:
+		data_left = multiply(wrapping,sound[0])
+		data_right = multiply(wrapping[::-1],sound[1])
 	return [data_left, data_right]
 
 def sim_app(sound, approach=True):
