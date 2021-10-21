@@ -3,7 +3,6 @@
 from numpy import linspace, sin, zeros, concatenate as concat, multiply, pi, \
 array
 import sounddevice as sd
-from scipy.io import wavfile
 import librosa
 
 def reverse_channels(sound):

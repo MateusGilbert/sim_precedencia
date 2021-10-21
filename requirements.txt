@@ -1,6 +1,5 @@
-numpy==1.13.3
 sounddevice==0.4.2
 librosa==0.8.1
-scipy==0.19.1
+numpy>=1.13.3
 ipython==7.28.0
 Pillow==8.4.0
